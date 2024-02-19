@@ -1,4 +1,8 @@
 repos:
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.0.4
+    hooks:
+      - id: autopep8
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.1.0 # this is optional, use `pre-commit autoupdate` to get the latest rev!
     hooks:
@@ -7,10 +11,6 @@ repos:
       - id: name-tests-test
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/hhatto/autopep8
-    rev: v2.0.4
-    hooks:
-      - id: autopep8
   - repo: local
     hooks:
       - id: pylint
