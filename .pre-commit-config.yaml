@@ -3,6 +3,7 @@ repos:
     rev: v4.1.0 # this is optional, use `pre-commit autoupdate` to get the latest rev!
     hooks:
       - id: check-yaml
+      - id: name-tests-test
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: local
