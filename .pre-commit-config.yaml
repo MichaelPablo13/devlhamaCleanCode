@@ -3,8 +3,8 @@ repos:
     rev: v4.1.0 # this is optional, use `pre-commit autoupdate` to get the latest rev!
     hooks:
       - id: check-yaml
+      - id: pretty-format-json
       - id: name-tests-test
-        args: ["--pytest"]
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: local
