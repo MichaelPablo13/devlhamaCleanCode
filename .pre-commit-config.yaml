@@ -7,6 +7,10 @@ repos:
       - id: name-tests-test
       - id: end-of-file-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.0.4
+    hooks:
+      - id: autopep8
   - repo: local
     hooks:
       - id: pylint
