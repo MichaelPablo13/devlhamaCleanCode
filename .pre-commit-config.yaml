@@ -9,7 +9,12 @@ repos:
       - id: check-yaml
       - id: check-json
       - id: name-tests-test
-        exclude: src/infra/db/tests/users_repository.py
+        exclude:
+        |
+            (?x)^(
+                src/infra/db/tests/users_repository.py|
+                src/data/tests/user_finder.py|
+            )$
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: local
