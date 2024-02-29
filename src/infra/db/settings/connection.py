@@ -6,12 +6,7 @@ class DBConnectionHandler:
 
     def __init__(self) -> None:
         self.__connection_string = "{}://{}:{}@{}:{}/{}".format(
-            'mysql+pymysql',
-            'root',
-            'password',
-            'localhost',
-            '3306',
-            'clean_database'
+            "mysql+pymysql", "root", "password", "172.18.0.2", "3306", "clean_database"
         )
         self.__engine = self.__create_database_engine
         self.session = None
